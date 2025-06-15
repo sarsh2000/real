@@ -1,0 +1,1518 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+    
+    <head>
+        
+        <title>
+
+            P.C.S.
+            
+        </title>
+
+        <style>
+            
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+                height: 5200px;
+                width: 100%;
+
+            }
+
+            .hamburger {
+                height: 50px;
+                margin-right: 10PX;
+                margin-top: 2px;
+            }
+           
+           .navbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #000000;
+                padding: 10px 20px;
+            }
+
+            .navbar .logo a{
+                color: rgb(199, 199, 199);
+                text-decoration: none;
+                font-size: 10px;
+                font-weight: 550;
+                font-family:sans-serif;
+                transition: 0.3s ease-in;
+            }
+
+            .navbar .logo a:hover {
+                color: rgb(0, 102, 255);;
+            }
+
+            .nav-link {
+                list-style: none;
+                display: flex;
+                margin-left: auto;
+            }
+
+            .nav-link li{
+                margin: 0 3px;
+                height: 50px;
+
+            }
+
+            .nav-link li:first-child {
+                margin-right: auto;
+            }
+
+            .nav-link a {
+                height: 100%;
+                padding: 0 30px;
+                display: flex;
+                align-items: center;
+            }
+
+            .nav-link ul {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+            
+            .nav-link li a{
+                text-decoration: none;
+                color: white;
+                font-size: 10px;
+                font-family: sans-serif;
+                text-transform: uppercase;
+                transition: 0.3s ease-in;
+            }
+
+            .nav-link li a:hover{
+                color: rgb(0, 102, 255);
+            }
+
+            .sidebar {
+                 list-style: none;
+                display: flex;
+                margin-left: auto;
+                position: fixed;
+                top: 0;
+                right: 0;
+                height: 100vh;
+                width: 250px;
+                z-index: 999;
+                background-color: black;
+                backdrop-filter: blur(10px);
+                box-shadow: -10px 0 10px rgb(0, 0, 0, 0.1);
+                display: none;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+            }
+
+            .sidebar li {
+                width: 100%;
+            }
+
+            .sidebar a {
+                 width: 100%;
+            }
+
+             
+            
+         
+
+          
+
+            .button {
+                
+                background-color: rgb(20, 11, 102);
+                border: none;
+                width: 200px;
+                height: 50px;
+                transition: 0.3s ease-in
+                
+            }
+            
+            .button-atom__text {
+                font-weight: 550;
+                font-size: medium;
+                padding-bottom: 40px;
+                text-align: center;
+                color: aliceblue;
+            }
+
+            .button:hover{
+                background:  rgb(0, 0, 0);
+            }
+
+            .ham1 .ham {
+                height: 500px;
+                float: right;
+                margin-top: 70px;
+                margin-right: 200px;
+            }
+
+            .next {
+                float: left;
+                margin-left: 300px;
+                margin-top: 450px;
+            }
+
+            .burger1 .burger {
+                background: none;
+                position: absolute;
+                width: 1270px;
+                right: -0px;
+                bottom: -2px;
+                z-index: -1;
+                color: black;
+            }
+
+            .rate {
+                position: relative;
+                z-index: -1;
+                width: 1521px;
+                height: 3500px;
+                bottom: -130px;
+                
+            }
+
+            .BLACK {
+                position: sticky;
+                z-index: -1;
+                width: 1521px;
+                bottom: -130px;
+                color: white;
+                font-family: sans-serif;
+            }
+
+            .need {
+                width: 380px;
+                bottom: 3250px;
+                left: 150px;
+                position: relative;
+            }
+            
+            .shape {
+                width: 30px;
+                height: 800px;
+                top: 850px;
+                left: 550px;
+                position: absolute;
+            }
+            
+            .to {
+                width: 700px;
+                position: absolute;
+                right: 160px;
+                top: 850px;
+            }
+
+            .be {
+                width: 870px;
+                position: absolute;
+                right: 30px;
+                top: 1150px;
+            }
+
+            .too {
+                width: 700px;
+                position: absolute;
+                right: 150px;
+                top: 1450px;
+            }
+
+            .how {
+                width: 350px;
+                position: absolute;
+                right: 550px;
+                top: 1850px;
+            }
+            
+            .we {
+                width: 300px;
+                position: absolute;
+                right: 1150px;
+                top: 2200px;
+            }
+
+            .work {
+                 width: 300px;
+                position: absolute;
+                right: 750px;
+                top: 2210px;
+            }
+
+            .xe {
+                width: 300px;
+                position: absolute;
+                right: 370px;
+                top: 2210px
+            }
+
+            .ze {
+                width: 300px;
+                position: absolute;
+                right: 20px;
+                top: 2220px
+            }
+
+            .l1 {
+                width: 20px;
+                height: 300px;
+                position: absolute;
+                left: 400px;
+                top: 2150px
+            }
+
+            .l2 {
+                width: 20px;
+                height: 300px;
+                position: absolute;
+                left: 800px;
+                top: 2150px
+            }
+
+            .l3 {
+                width: 20px;
+                height: 300px;
+                position: absolute;
+                left: 1170px;
+                top: 2150px
+            }
+
+            .h1 {
+                width: 350px;
+                position: absolute;
+                left: 500px;
+                top: 2600px
+            }
+
+            .h2 {
+                width: 200px;
+                position: absolute;
+                left: 1200px;
+                top: 3255px
+            }
+
+            .h3 {
+                width: 600px;
+                position: absolute;
+                left: 60px;
+                top: 3580px
+            }
+
+            .h4 {
+                width: 600px;
+                position: absolute;
+                left: 800px;
+                top: 3580px
+            }
+
+            .vet {
+                position: absolute;
+                top: 3875px;
+                width: 600px;
+            }
+
+            .co { 
+                position: absolute;
+                width: 350px;
+                top: 4450px;
+                left: 80px;
+            }
+
+            .blue {
+                position: absolute;
+                width: 800px;
+                top: 4580px;
+                right: 650px;
+            }
+
+            .container {
+                position: absolute;
+                top: 4450px;
+                right: 150px;
+                display:flex
+            }
+           
+            .container {
+                flex-direction: column;
+                width: 300px;
+                padding: 15px;
+                border: 1px solid skyblue;
+                border-radius: 5px;
+                
+            }
+           
+            input {
+                margin: 5px 0px;
+                height: 35px;
+                padding: 7px;
+            }
+           
+            button {
+                height: 35px;
+                margin: 5px 0px;
+                background-clip: rgb(160, 135, 235);
+                border: none;
+                border-radius: 5px;
+                color: black;
+            }
+           
+            button:hover {
+                background-color: black;
+                color: skyblue;
+            }
+           
+            select {
+                padding: 10px;
+                font-size: 16px;
+                border-radius: 6px;
+                border: 1px solid #ccc;
+                width: 100%;
+                max-width: 300px;
+                background-color: #fff;
+                appearance: none;
+            }
+           
+            label {
+                font-weight: bold;
+                display: block;
+                margin-bottom: 5px;
+            }
+            
+            .abcde {
+                background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5em;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    right: 40%;
+    position: absolute;
+    top: 2790px;
+        }
+       
+        svg {
+    fill: #1e90ff;
+    width: 64px;
+    height: 64px;
+    transition: fill 0.3s ease;
+  }
+ 
+    .abcde:hover {
+    background-color: #dcd8d8;
+  }
+ 
+      .abcde:hover svg {
+    fill: #61dafb;
+  }
+
+        .abc {
+            display: flex;
+            
+        }
+
+        .abcd {
+            font-family: sans-serif;
+            font-weight: 500;
+            color: white;
+            font-size: 29px;
+            position: absolute;
+            right: 50%;
+            top: 2810px;
+        }
+
+        .aaa {
+            display: flex;
+        }
+
+        .aaab {
+            font-family: sans-serif;
+            font-weight: 500;
+            color: white;
+            font-size: 29px;
+            position: absolute;
+            right: 50.5%;
+            top: 2895px;
+        }
+        
+        .aaaab {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0.5em;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            right: 40%;
+            position: absolute;
+            top: 2875px;
+        }
+
+        svg {
+    fill: #1e90ff;
+    width: 64px;
+    height: 64px;
+    transition: fill 0.3s ease;
+  }
+ 
+    .aaaab:hover {
+    background-color: #dcd8d8;
+  }
+ 
+      .aaaab:hover svg {
+    fill: #61dafb;
+  }
+
+  .bbb {
+            display: flex;
+        }
+
+        .bbbc {
+            font-family: sans-serif;
+            font-weight: 500;
+            color: white;
+            font-size: 29px;
+            position: absolute;
+            right: 53.15%;
+            top: 2985px;
+        }
+        
+        .bbbbc {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0.5em;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            right: 40%;
+            position: absolute;
+            top: 2961px;
+        }
+
+        svg {
+    fill: #1e90ff;
+    width: 64px;
+    height: 64px;
+    transition: fill 0.3s ease;
+  }
+ 
+    .bbbbc:hover {
+    background-color: #dcd8d8;
+  }
+ 
+      .bbbbc:hover svg {
+    fill: #61dafb;
+  }
+
+  .ccc {
+            display: flex;
+        }
+
+        .cccd {
+            font-family: sans-serif;
+            font-weight: 500;
+            color: white;
+            font-size: 29px;
+            position: absolute;
+            right: 45.9%;
+            top: 3069px;
+        }
+        
+        .ccccd {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0.5em;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            right: 40%;
+            position: absolute;
+            top: 3046px;
+        }
+
+        svg {
+    fill: #1e90ff;
+    width: 64px;
+    height: 64px;
+    transition: fill 0.3s ease;
+  }
+ 
+    .ccccd:hover {
+    background-color: #dcd8d8;
+  }
+ 
+      .ccccd:hover svg {
+    fill: #61dafb;
+  }
+
+        .blue2 {
+            width: 550px;
+            position: absolute;
+            right: 570px;
+            top: 2865px;
+        }
+
+        .blue3 {
+            width: 550px;
+            position: absolute;
+            right: 570px;
+            top: 2950px;
+        }
+
+        .blue4 {
+            width: 550px;
+            position: absolute;
+            right: 570px;
+            top: 3035px;
+        }
+
+        .blue5 {
+            width: 550px;
+            position: absolute;
+            right: 570px;
+            top: 3120px;
+        }
+
+        .blue6 {
+            width: 550px;
+            position: absolute;
+            right: 570px;
+            top: 2780px;
+        }
+
+        .PC {
+            width: 300px;
+            left: 70px;
+            position: absolute;
+            top: 2000px;
+        }
+
+        .cf {
+            width: 300px;
+            left: 470px;
+            position: absolute;
+            top: 2000px;
+        }
+
+        .am {
+            width: 300px;
+            left: 850px;
+            position: absolute;
+            top: 2000px;
+        }
+
+        .pr {
+            width: 300px;
+            left: 1210px;
+            position: absolute;
+            top: 2000px;
+        }
+
+        .contact-form {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .contact-form h2 {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 0.75rem 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #1e40af;
+    }
+
+    .A {
+        position: absolute;
+        width: 100%;
+        top: 5200px;
+
+    }
+
+    .chi {
+        position: relative;
+        font-size: larger;
+        font-family: sans-serif;
+        top: 1000px;
+        float: right;
+        right: 100px;
+    }
+
+    /* Responsive styles */
+  /* Mobile first: up to 600px */
+  @media (max-width: 600px) {
+
+
+         body {
+            font-family: 'Inter', sans-serif;
+            
+    line-height: 1.6;
+    min-height: 1000vh;
+    display: flex;
+    flex-direction: column;
+
+        
+         }
+
+         .A {
+            visibility: hidden;
+        position: absolute;
+        width: 100%;
+        top: 60px;}
+
+        .ham1 .ham {
+                
+                width: 100%;
+                position: absolute;
+                top: 50px;
+            }
+
+        .burger1 .burger {
+                visibility: hidden;
+            }
+        
+         .button {
+                position: absolute;
+                background-color: rgb(20, 11, 102);
+                border: none;
+                width: 200px;
+                height: 50px;
+                transition: 0.3s ease-in
+                
+            }
+            
+        .button-atom__text {
+                
+                font-weight: 550;
+                font-size: medium;
+                padding-bottom: 40px;
+                text-align: center;
+                color: aliceblue;
+            }
+
+        .button:hover{
+                background:  rgb(0, 0, 0);
+            }
+
+        .next {
+             position: absolute;
+             top: 300px;
+             left: -150px;
+            }
+
+        
+         .rate {
+                position: relative;
+                z-index: -1;
+                width: 600px;
+                top: 800px;
+                height: 5700px;
+                bottom: -130px;
+                
+            }
+        
+         .need {
+                width: 300px;
+                top: 1000px;
+                left: 150px;
+                position: absolute;
+            }
+            
+         .shape {
+            visibility: hidden;
+            }
+
+         .to {
+                width: 350px;
+                position: absolute;
+                left: 90px;
+                top: 1150px;
+            }
+
+        .be {
+              width: 400px;
+                position: absolute;
+                left: 70px;
+                top: 1350px;
+            }
+
+         .too {
+               width: 350px;
+                position: absolute;
+                left: 90px;
+                top: 1550px;
+            }
+
+            .how {
+                 width: 250px;
+                position: absolute;
+                left: 150px;
+                top: 1850px;
+            }
+            
+            .we {
+                  width: 250px;
+                position: absolute;
+                left: 150px;
+                top: 2100px;
+            }
+
+            .work {
+                 width: 250px;
+                position: absolute;
+                left: 150px;
+                top: 2500px;
+            }
+
+              .xe {
+              width: 250px;
+                position: absolute;
+                left: 150px;
+                top: 2900px;
+            }
+
+            .ze {
+                width: 250px;
+                position: absolute;
+                left: 150px;
+                top: 3300px;
+            }
+
+            .l1 {
+               visibility: hidden;
+            }
+
+            .l2 {
+              visibility: hidden;
+            }
+
+            .l3 {
+               visibility: hidden;
+            }
+
+            .h1 {
+              width: 250px;
+                position: absolute;
+                left: 150px;
+                top: 3750px;
+            }
+
+            .h2 {
+              width: 250px;
+                position: absolute;
+                left: 150px;
+                top: 1850px;
+            }
+
+            .h3 {
+               width: 250px;
+                position: absolute;
+                left: 150px;
+                top: 1850px;
+            }
+
+            .h4 {
+               width: 250px;
+                position: absolute;
+                left: 150px;
+                top: 1850px;
+            }
+
+             .PC {
+            width: 250px;
+                position: absolute;
+                left: 150px;
+                top: 2250px;
+        }
+
+        .cf {
+            width: 250px;
+                position: absolute;
+                left: 150px;
+                top: 2650px;
+        }
+
+        .am {
+            width: 250px;
+                position: absolute;
+                left: 150px;
+                top: 3030px;
+        }
+
+        .pr {
+            width: 250px;
+                position: absolute;
+                left: 150px;
+                top: 3450px;
+        }
+
+         
+
+        .abcd {
+            font-family: sans-serif;
+            font-weight: 500;
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            right: 170px;
+            top: 3990px;
+        }
+        
+        .abcde {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0.5em;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            right: 30px;
+            position: absolute;
+            top: 3965px;}
+
+        .vet {
+            position: absolute;
+            top: 5075px;
+            width: 600px;
+
+            }
+
+             .aaab {
+            font-family: sans-serif;
+            font-weight: 500;
+            color: white;
+             font-size: 20px;
+            position: absolute;
+           right: 170px;
+            top: 4080px;
+        }
+        
+        .aaaab {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0.5em;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            right: 30px;
+            position: absolute;
+            top: 4055px;
+        }
+
+        .bbbc {
+            font-family: sans-serif;
+            font-weight: 500;
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            right: 170px;
+            top: 4167px;
+        }
+        
+        .bbbbc {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0.5em;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            right: 30px;
+            position: absolute;
+            top: 4143px;
+        }
+
+        
+        .cccd {
+            font-family: sans-serif;
+            font-weight: 500;
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            right: 170px;
+            top: 4255px;
+        }
+        
+        .ccccd {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0.5em;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            right: 30px;
+            position: absolute;
+            top: 4232px;
+        }
+
+         .h2 {
+                width: 100px;
+                position: absolute;
+                left: 400px;
+                top: 3800px
+            }
+
+            .h3 {
+                width: 450px;
+                position: absolute;
+                left: 50px;
+                top: 4550px
+            }
+
+            .h4 {
+                width: 450px;
+                position: absolute;
+                left: 50px;
+                top: 4780px
+            }
+
+            
+        .contact-form {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .container {
+        position: absolute;
+        top: 5800px;
+        left: 100px;
+
+    }
+
+      .co { 
+            visibility: hidden;
+            }
+
+     .blue {
+                position: absolute;
+                width: 480px;
+                top: 6700px;
+                right: 20px;
+            }
+
+            .hideonmobile {
+                display: none;
+            }
+
+
+    }
+        </style>
+
+   
+    </head>
+
+    <body>
+        
+        <nav class="navbar">
+            <div>
+                <img class="hamburger" src="hamburger/Screenshot_20250523-195753.png">
+            </div>
+
+            <div class="logo">
+                <a href="#">
+                    Personnal<br>Cybersecurity<br>Services
+                </a>
+            </div>
+ 
+        
+            <ul class="nav-link">
+
+                <li class="hideonmobile"><a href="http://127.0.0.1:5502/RECOVERY.html">Home</a></li>
+                <li class="hideonmobile"><a href="#">Expert Witness</a></li>
+                <li class="hideonmobile"><a href="http://127.0.0.1:5502/test/test.html">criminal Investigations</a></li>
+                <li class="hideonmobile"><a href="#">Fraud Investigations</a></li>
+                <li class="hideonmobile"><a href="#">Asset Search</a></li>
+                <li class="hideonmobile"><a href="#">Online Fraud and Computer Crime</a></li>
+                <li class="hideonmobile"><a href="#">Business Services</a></li>
+                <li class="hideonmobile"><a href="#">Public Sector</a></li>
+                <li class="hideonmobile"><a href="#">Surveillance</a></li>
+                <li class="hideonmobile"><a href="#">Our Company</a></li>
+                <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="15px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+
+            <script>
+                function showSidebar(){
+                    const sidebar = document.querySelector('.sidebar')
+                    sidebar.style.display = 'flex'
+                }
+
+                 function hideSidebar(){
+                    const sidebar = document.querySelector('.sidebar')
+                    sidebar.style.display = 'none'
+                }
+
+            </script>
+
+
+              <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="http://127.0.0.1:5502/RECOVERY.html">Home</a></li>
+                <li><a href="#">Expert Witness</a></li>
+                <li><a href="http://127.0.0.1:5502/test/test.html">criminal Investigations</a></li>
+                <li><a href="#">Fraud Investigations</a></li>
+                <li><a href="#">Asset Search</a></li>
+                <li><a href="#">Online Fraud and Computer Crime</a></li>
+                <li><a href="#">Business Services</a></li>
+                <li><a href="#">Public Sector</a></li>
+                <li><a href="#">Surveillance</a></li>
+                <li><a href="#">Our Company</a></li>
+                
+                
+            </ul>
+
+
+        </nav>
+        
+        <span class="next">
+             <button class="button">
+                <a href="#contactForm" target="_self" data-type="url"> 
+              
+                   <span class="button-atom__text">
+                   Open a Case
+                   </span>
+                </a>
+           </button>
+        </span>
+           
+        <span class="ham1">
+             <img class="ham" src="ham/box.png">
+         </span>
+
+         <span class="burger1">
+            <img class="burger" src="burger/new.png">  
+        </span>
+       
+        <img class="rate" src="rate/Screenshot_20250528-183343.jpg">
+       
+        <img class="need" src="need/Weed.png">
+
+        <img class="shape" src="shape/Line.png">
+
+        <img class="to" src="to/1748721238902.jpg">
+
+        <img class="be" src="be/1748714934060.jpg">
+
+        <img class="too" src="too/1748715813566.jpg">
+
+        <img class="how" src="how/1748786379643.jpg">
+
+        <img class="we" src="we/Screenshot_20250601-151659.jpg">
+
+        <img class="work" src="work/Screenshot_20250601-152248.jpg">
+
+        <img class="xe" src="xe/1748788060062.jpg">
+
+        <img class="ze" src="ze/1748789458609.jpg">
+
+        <img class="l1" src="l1/Line.png">
+
+        <img class="l2" src="l2/Line.png">
+
+        <img class="l3" src="l3/Line.png">
+
+        <img class="h1" src="h1/Screenshot_20250601-183726.jpg">
+
+        <img class="h2" src="h2/Screenshot_20250601-181745.jpg">
+
+        <img class="h3" src="h3/Screenshot_20250601-194442.jpg">
+
+        <img class="h4" src="h4/Screenshot_20250601-193227.jpg">
+
+        <img class="vet" src="vet/images (74).jpeg">
+
+        <img class="co" src="co/Screenshot 2025-05-30 134353.png">
+
+        <img class="blue" src="blue/con.jpg">
+
+        <img class="blue2" src="blue2/1748979047247.png">
+
+        <img class="blue3" src="blue3/1748979047247.png">
+
+        <img class="blue4" src="blue4/1748979047247.png">
+
+        <img class="blue5" src="blue5/1748979047247.png">
+
+        <img class="blue6" src="blue6/1748979047247.png">
+
+        <img class="PC" src="PC/Picture that describes _tailored strategies based on a thorough evaluation _20250603_212957_0000.jpg">
+
+        <img class="cf" src="cf/Picture that describes _precision in execution to meet specific client requ_20250603_215118_0000.jpg">
+
+        <img class="am" src="am/Picture that describes _a cybersecurity toolbox to match the complexity and_20250603_215414_0000.jpg">
+
+        <img class="pr" src="pr/Picture that describes _a cybersecurity toolbox to match the complexity and_20250603_215516_0000.jpg">
+
+        <div class="container">
+           
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <form id="contactForm">
+                  <div class="form-group">
+                    <label for="from_name">First Name</label>
+                    <input type="text" id="from_name" name="from_name" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="from_email">Email</label>
+                    <input type="email" id="from_email" name="e-mail" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="number">Phone Number</label>
+                    <input type="number" id="number" name="number" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                  </div>
+
+                  <label for="country">Select your country:</label>
+                  <select id="country" name="country">
+                  <option value="">--Please choose an option--</option>
+                    <option value="AF">Afghanistan</option>
+        <option value="AL">Albania</option>
+        <option value="DZ">Algeria</option>
+        <option value="AS">American Samoa</option>
+        <option value="AD">Andorra</option>
+        <option value="AO">Angola</option>
+        <option value="AI">Anguilla</option>
+        <option value="AQ">Antarctica</option>
+        <option value="AG">Antigua and Barbuda</option>
+        <option value="AR">Argentina</option>
+        <option value="AM">Armenia</option>
+        <option value="AW">Aruba</option>
+        <option value="AU">Australia</option>
+        <option value="AT">Austria</option>
+        <option value="AZ">Azerbaijan</option>
+        <option value="BS">Bahamas</option>
+        <option value="BH">Bahrain</option>
+        <option value="BD">Bangladesh</option>
+        <option value="BB">Barbados</option>
+        <option value="BY">Belarus</option>
+        <option value="BE">Belgium</option>
+        <option value="BZ">Belize</option>
+        <option value="BJ">Benin</option>
+        <option value="BM">Bermuda</option>
+        <option value="BT">Bhutan</option>
+        <option value="BO">Bolivia</option>
+        <option value="BA">Bosnia and Herzegovina</option>
+        <option value="BW">Botswana</option>
+        <option value="BR">Brazil</option>
+        <option value="IO">British Indian Ocean Territory</option>
+        <option value="BN">Brunei Darussalam</option>
+        <option value="BG">Bulgaria</option>
+        <option value="BF">Burkina Faso</option>
+        <option value="BI">Burundi</option>
+        <option value="KH">Cambodia</option>
+        <option value="CM">Cameroon</option>
+        <option value="CA">Canada</option>
+        <option value="CV">Cape Verde</option>
+        <option value="KY">Cayman Islands</option>
+        <option value="CF">Central African Republic</option>
+        <option value="TD">Chad</option>
+        <option value="CL">Chile</option>
+        <option value="CN">China</option>
+        <option value="CX">Christmas Island</option>
+        <option value="CC">Cocos (Keeling) Islands</option>
+        <option value="CO">Colombia</option>
+        <option value="KM">Comoros</option>
+        <option value="CG">Congo</option>
+        <option value="CD">Congo, the Democratic Republic of the</option>
+        <option value="CK">Cook Islands</option>
+        <option value="CR">Costa Rica</option>
+        <option value="CI">Côte d'Ivoire</option>
+        <option value="HR">Croatia</option>
+        <option value="CU">Cuba</option>
+        <option value="CY">Cyprus</option>
+        <option value="CZ">Czech Republic</option>
+        <option value="DK">Denmark</option>
+        <option value="DJ">Djibouti</option>
+        <option value="DM">Dominica</option>
+        <option value="DO">Dominican Republic</option>
+        <option value="EC">Ecuador</option>
+        <option value="EG">Egypt</option>
+        <option value="SV">El Salvador</option>
+        <option value="GQ">Equatorial Guinea</option>
+        <option value="ER">Eritrea</option>
+        <option value="EE">Estonia</option>
+        <option value="ET">Ethiopia</option>
+        <option value="FJ">Fiji</option>
+        <option value="FI">Finland</option>
+        <option value="FR">France</option>
+        <option value="GA">Gabon</option>
+        <option value="GM">Gambia</option>
+        <option value="GE">Georgia</option>
+        <option value="DE">Germany</option>
+        <option value="GH">Ghana</option>
+        <option value="GR">Greece</option>
+        <option value="GD">Grenada</option>
+        <option value="GU">Guam</option>
+        <option value="GT">Guatemala</option>
+        <option value="GN">Guinea</option>
+        <option value="GW">Guinea-Bissau</option>
+        <option value="GY">Guyana</option>
+        <option value="HT">Haiti</option>
+        <option value="HN">Honduras</option>
+        <option value="HK">Hong Kong</option>
+        <option value="HU">Hungary</option>
+        <option value="IS">Iceland</option>
+        <option value="IN">India</option>
+        <option value="ID">Indonesia</option>
+        <option value="IR">Iran</option>
+        <option value="IQ">Iraq</option>
+        <option value="IE">Ireland</option>
+        <option value="IL">Israel</option>
+        <option value="IT">Italy</option>
+        <option value="JM">Jamaica</option>
+        <option value="JP">Japan</option>
+        <option value="JO">Jordan</option>
+        <option value="KZ">Kazakhstan</option>
+        <option value="KE">Kenya</option>
+        <option value="KI">Kiribati</option>
+        <option value="KP">Korea, North</option>
+        <option value="KR">Korea, South</option>
+        <option value="KW">Kuwait</option>
+        <option value="KG">Kyrgyzstan</option>
+        <option value="LA">Laos</option>
+        <option value="LV">Latvia</option>
+        <option value="LB">Lebanon</option>
+        <option value="LS">Lesotho</option>
+        <option value="LR">Liberia</option>
+        <option value="LY">Libya</option>
+        <option value="LI">Liechtenstein</option>
+        <option value="LT">Lithuania</option>
+        <option value="LU">Luxembourg</option>
+        <option value="MO">Macau</option>
+        <option value="MK">North Macedonia</option>
+        <option value="MG">Madagascar</option>
+        <option value="MW">Malawi</option>
+        <option value="MY">Malaysia</option>
+        <option value="MV">Maldives</option>
+        <option value="ML">Mali</option>
+        <option value="MT">Malta</option>
+        <option value="MH">Marshall Islands</option>
+        <option value="MR">Mauritania</option>
+        <option value="MU">Mauritius</option>
+        <option value="MX">Mexico</option>
+        <option value="FM">Micronesia</option>
+        <option value="MD">Moldova</option>
+        <option value="MC">Monaco</option>
+        <option value="MN">Mongolia</option>
+        <option value="ME">Montenegro</option>
+        <option value="MA">Morocco</option>
+        <option value="MZ">Mozambique</option>
+        <option value="MM">Myanmar</option>
+        <option value="NA">Namibia</option>
+        <option value="NR">Nauru</option>
+        <option value="NP">Nepal</option>
+        <option value="NL">Netherlands</option>
+        <option value="NZ">New Zealand</option>
+        <option value="NI">Nicaragua</option>
+        <option value="NE">Niger</option>
+        <option value="NG">Nigeria</option>
+        <option value="NO">Norway</option>
+        <option value="OM">Oman</option>
+        <option value="PK">Pakistan</option>
+        <option value="PW">Palau</option>
+        <option value="PA">Panama</option>
+        <option value="PG">Papua New Guinea</option>
+        <option value="PY">Paraguay</option>
+        <option value="PE">Peru</option>
+        <option value="PH">Philippines</option>
+        <option value="PL">Poland</option>
+        <option value="PT">Portugal</option>
+        <option value="QA">Qatar</option>
+        <option value="RO">Romania</option>
+        <option value="RU">Russia</option>
+        <option value="RW">Rwanda</option>
+        <option value="KN">Saint Kitts and Nevis</option>
+        <option value="LC">Saint Lucia</option>
+        <option value="VC">Saint Vincent and the Grenadines</option>
+        <option value="WS">Samoa</option>
+        <option value="SM">San Marino</option>
+        <option value="ST">Sao Tome and Principe</option>
+        <option value="SA">Saudi Arabia</option>
+        <option value="SN">Senegal</option>
+        <option value="RS">Serbia</option>
+        <option value="SC">Seychelles</option>
+        <option value="SL">Sierra Leone</option>
+        <option value="SG">Singapore</option>
+        <option value="SK">Slovakia</option>
+        <option value="SI">Slovenia</option>
+        <option value="SB">Solomon Islands</option>
+        <option value="SO">Somalia</option>
+        <option value="ZA">South Africa</option>
+        <option value="SS">South Sudan</option>
+        <option value="ES">Spain</option>
+        <option value="LK">Sri Lanka</option>
+        <option value="SD">Sudan</option>
+        <option value="SR">Suriname</option>
+        <option value="SE">Sweden</option>
+        <option value="CH">Switzerland</option>
+        <option value="SY">Syria</option>
+        <option value="TW">Taiwan</option>
+        <option value="TJ">Tajikistan</option>
+        <option value="TZ">Tanzania</option>
+        <option value="TH">Thailand</option>
+        <option value="TL">Timor-Leste</option>
+        <option value="TG">Togo</option>
+        <option value="TO">Tonga</option>
+        <option value="TT">Trinidad and Tobago</option>
+        <option value="TN">Tunisia</option>
+        <option value="TR">Turkey</option>
+        <option value="TM">Turkmenistan</option>
+        <option value="TV">Tuvalu</option>
+        <option value="UG">Uganda</option>
+        <option value="UA">Ukraine</option>
+        <option value="AE">United Arab Emirates</option>
+        <option value="GB">United Kingdom</option>
+        <option value="US">United States</option>
+        <option value="UY">Uruguay</option>
+        <option value="UZ">Uzbekistan</option>
+        <option value="VU">Vanuatu</option>
+        <option value="VA">Vatican City</option>
+        <option value="VE">Venezuela</option>
+        <option value="VN">Vietnam</option>
+        <option value="YE">Yemen</option>
+        <option value="ZM">Zambia</option>
+        <option value="ZW">Zimbabwe</option>
+        </select>
+                 
+                <button type="submit">Send Message</button>
+
+                  
+                </form>
+              </div>
+              
+              <!-- EmailJS Script -->
+              <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+              <script>
+                (function() {
+                  emailjs.init("Vy9vcakZJk_D-9uQH"); // Replace with your EmailJS Public Key
+                })();
+              
+                document.getElementById("contactForm").addEventListener("submit", function(event) {
+                  event.preventDefault();
+              
+                  emailjs.sendForm("service_wwjs7fa", "template_ghhn8th", this)
+                    .then(() => {
+                      alert("Message sent successfully!");
+                      this.reset();
+                    }, (error) => {
+                      alert("Failed to send message: " + error.text);
+                    });
+                });
+              </script>
+           
+            
+  
+           
+            
+               
+        </div>
+
+        <a class="abc" href="#" target="self" data type="url">
+            <div class="abcd">
+                Law Firm and Litigants
+            </div>
+           
+            <div class="abcde" href="#">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M2 12h16M10 6l6 6-6 6" />
+                  </svg> 
+            </div>
+        </a>
+
+        <a class="aaa" href="#" target="self" data type="url">
+            <div class="aaab">
+                Victims of Cybercrime
+            </div>
+           
+            <div class="aaaab" href="#">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M2 12h16M10 6l6 6-6 6" />
+                  </svg> 
+            </div>
+        </a>
+
+        <a class="bbb" href="#" target="self" data type="url">
+            <div class="bbbc">
+                Crypto Businesses
+            </div>
+           
+            <div class="bbbbc" href="#">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M2 12h16M10 6l6 6-6 6" />
+                  </svg> 
+            </div>
+        </a>
+
+        <a class="ccc" href="#" target="self" data type="url">
+            <div class="cccd">
+                Law Enforcement Agencies
+            </div>
+           
+            <div class="ccccd" href="#">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M2 12h16M10 6l6 6-6 6" />
+                  </svg> 
+            </div>
+        </a>
+
+        
+            <img class="A" src="A/Screenshot_20250606-155407.jpg">
+          
+            <p class="chi">
+                copyright   2022 corporate Headquarters <br>
+                E.Jackson Blvd. Suite 500, <br>
+                Chicago, IL 60604 p: 312.884.5400  <br>
+                f:312.884.5900
+            </p>
+
+        
+        
+    </body>
+
+</html>

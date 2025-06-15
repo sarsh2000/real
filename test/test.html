@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+
+        <style>
+
+             *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                position: absolute;
+                 margin: 0;
+                padding: 0;
+                height: 400vh;
+                width: 100%;
+            }
+            .crypto {
+                
+            display: flex;
+            flex-flow: column;
+            gap: 15px;
+            }
+
+            .crypto {
+                
+                font-size: 2em;
+                font-weight: 400;
+                position: absolute;
+                right: 40%;
+                top: 300px;
+            }
+
+            .crc {
+                font-size: medium;
+                color: rgb(58, 58, 158);
+                font-family: sans-serif;
+                
+            }
+
+            .ii {
+                font-size: larger;
+            }
+            
+            
+
+            p {
+                position: absolute;
+                top: 200px;
+                font-size: 20px;
+                margin: 15px;
+            }
+
+            .a {
+                position: absolute;
+                width: 350px;
+                left: 70px;
+                top: 1000px;
+            }
+
+            .b {
+                position: absolute;
+                width: 200px;
+                left: 80px;
+                top: 1400px;
+            }
+
+            .coo {
+                position: absolute;
+                top: 200px;
+                font-size: 16px;
+                margin: 15px; 
+                box-sizing: border-box;
+                top: 1150px;
+                font-family: sans-serif;
+                width: 504px;
+                font-weight: 300;
+                left: 70px;
+            }
+            
+            .oo {
+                position: absolute;
+                top: 200px;
+                font-size: 16px;
+                margin: 15px; 
+                box-sizing: border-box;
+                top: 1550px;
+                font-family: sans-serif;
+                width: 504px;
+                font-weight: 300;
+                left: 70px;
+            }
+
+            
+            .hamburger {
+                height: 50px;
+                margin-right: 10PX;
+                margin-top: 2px;
+            }
+           
+           .navbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #000000;
+                padding: 10px 20px;
+            }
+
+            .navbar .logo a{
+                color: rgb(199, 199, 199);
+                text-decoration: none;
+                font-size: 10px;
+                font-weight: 550;
+                font-family:sans-serif;
+                transition: 0.3s ease-in;
+            }
+
+            .navbar .logo a:hover {
+                color: rgb(0, 102, 255);;
+            }
+
+            .nav-link {
+                list-style: none;
+                display: flex;
+                margin-left: auto;
+            }
+
+            .nav-link li{
+                margin: 0 15px;
+            }
+            
+            .nav-link li a{
+                text-decoration: none;
+                color: white;
+                font-size: 10px;
+                font-family: sans-serif;
+                text-transform: uppercase;
+                transition: 0.3s ease-in;
+            }
+
+            .nav-link li a:hover{
+                color: rgb(0, 102, 255);
+            }
+
+            .co {
+                position: absolute;
+                top: 200px;
+                font-size: 16px;
+                margin: 15px; 
+                box-sizing: border-box;
+                top: 1150px;
+                font-family: sans-serif;
+                width: 504px;
+                font-weight: 300;
+                right: 70px;
+            }
+
+            .oc {
+                position: absolute;
+                top: 200px;
+                font-size: 24px;
+                margin: 15px; 
+                box-sizing: border-box;
+                top: 1450px;
+                font-family: sans-serif;
+                width: 504px;
+                font-weight: 300;
+                right: 70px;
+            }
+
+            .c {
+                 position: absolute;
+                width: 300px;
+                left: 600px;
+                top: 1900px;
+            }
+
+            .d { 
+                 position: absolute;
+                width: 200px;
+                right: 80px;
+                top: 800px;
+            }
+
+            .e {
+               position: absolute;
+                width: 250px;
+                right: 340px;
+                top: 1110px;  
+            }
+
+            .f {
+                position: absolute;
+                width: 350px;
+                right: 590px;
+                top: 2100px;  
+            }
+
+            .ao {
+                 position: absolute;
+                top: 200px;
+                font-size: 18px;
+                margin: 15px; 
+                box-sizing: border-box;
+                top: 2550px;
+                font-family: sans-serif;
+                width: 404px;
+                font-weight: 300;
+                left: 180px;
+            }
+
+            .bo {
+                 position: absolute;
+                top: 200px;
+                font-size: 18px;
+                margin: 15px; 
+                box-sizing: border-box;
+                top: 2550px;
+                font-family: sans-serif;
+                width: 404px;
+                font-weight: 300;
+                right: 180px;
+            }
+
+              .next {
+                position: absolute;
+                top: 2300px;
+                float: left;
+                margin-left: 300px;
+                margin-top: 450px;
+                left: 350px;
+            }
+
+              .button {
+                
+                background-color: rgb(20, 11, 102);
+                border: none;
+                width: 200px;
+                height: 50px;
+                transition: 0.3s ease-in
+                
+            }
+            
+            .button-atom__text {
+                font-weight: 550;
+                font-size: medium;
+                padding-bottom: 40px;
+                text-align: center;
+                color: aliceblue;
+            }
+
+            .button:hover{
+                background:  rgb(0, 0, 0);
+            }
+        </style>
+    </head>
+
+    <body>
+
+         <nav class="navbar">
+            <div>
+                <img class="hamburger" src="hamburger/Screenshot_20250523-195753.png">
+            </div>
+
+            <div class="logo">
+                <a href="">
+                    Personnal<br>Cybersecurity<br>Services
+                </a>
+            </div>
+
+         <ul class="nav-link">
+                <li><a href="http://127.0.0.1:5502/RECOVERY.html">Home</a></li>
+                <li><a href="#">Expert Witness</a></li>
+                <li><a href="http://127.0.0.1:5500/test.html">criminal Investigations</a></li>
+                <li><a href="#">Fraud Investigations</a></li>
+                <li><a href="#">Asset Search</a></li>
+                <li><a href="#">Online Fraud and Computer Crime</a></li>
+                <li><a href="#">Business Services</a></li>
+                <li><a href="#">Public Sector</a></li>
+                <li><a href="#">Surveillance</a></li>
+                <li><a href="#">Our Company</a></li>
+                
+            </ul>
+
+        <h1 class="crypto">
+            <span class="crc">
+                Cryptocurrency-Related Cybercrime
+            </span> 
+            <span class="ii">
+                Incident Investigations
+            </span>
+            
+                 <p>
+                We understand the devastating impact that cryptocurrency-related crimes can have on individuals and businesses.<br> <br>
+        
+                Our dedicated team specializes in providing comprehensive investigation services to crime victims who have lost cryptocurrencies and helping them navigate these challenging situations.
+            </p>
+
+            
+           
+        </h1>
+
+        <img class="a" src="a/Screenshot_20250606-124551.jpg">
+        <img class="b" src="b/Screenshot_20250606-125355.jpg">
+        <img class="c" src="c/Screenshot_20250606-134602.jpg">
+        <img class="d" src="d/Screenshot_20250606-134451.jpg">
+        <img class="e" src="e/Screenshot_20250606-143639.jpg">"
+        <img class="f" src="f/images (75).jpeg">
+        <img class="" src="">
+        <img class="" src="">
+
+
+
+        <div class="coo">
+            
+            "We are committed to delivering an efficient investigation process tailored to the circumstances of every case. Our team conducts thorough and methodical analyses to trace the stolen funds, uncover clues to the perpetrators' identities, and reconstruct the modus operandi behind the crime. We document our findings in detailed reports that offer actionable recommendations for law enforcement agencies. Our goal is to provide victims with comprehensive assistance at a budget that aligns with the scale of their loss, ensuring that you receive the support you need without compromising on quality or effectiveness.
+"
+        </div>
+
+        <div class="oo">
+            
+            In addition to our investigative efforts, we employ our infrastructure and global team to trace and monitor stolen funds in real time around the clock. This proactive approach allows us to leverage our extensive network of industry connections to attempt to have stolen funds intercepted and frozen. While asset recovery cannot be guaranteed as an outcome of our investigations, our goal is to maximize the chances of recovering lost funds as a result of the intelligence we provide.
+        
+        </div>
+        
+        <div class="co">
+            We serve as a bridge between crime victims and law enforcement agencies, facilitating communication and collaboration to ensure that your case receives the attention it deserves. Our team provides law enforcement agencies with comprehensive reports that outline the course of action recommended based on our investigation findings. We work closely with authorities to provide ongoing support and assistance throughout the investigation process.
+        </div>
+
+        <div class="oc">
+            “You prepared a comprehensive report of your findings and i've found this really useful. I have served a UK request for data on most of the service providers you have detailed in your report and I have been receiving responses.”
+        </div>
+
+        <div class="ao">
+            
+           With , you gain access to a team of experienced professionals who are committed to providing comprehensive support and assistance to crime victims. Your interests are always at the forefront of our efforts.
+        
+        </div>
+
+        <div class="bo">
+           
+            If you have been the victim of a cryptocurrency-related crime, don't hesitate to contact us today to learn more about how our investigation services can help you navigate through this challenging time.
+
+
+        </div>
+
+        <span class="next">
+             <button class="button">
+                <a href="http://127.0.0.1:5502/RECOVERY.html" target="_self" data-type="url"> 
+              
+                   <span class="button-atom__text">
+                   CONTACT US
+                   </span>
+                </a>
+           </button>
+        </span>
+        
+    </body>
+
+</html>
